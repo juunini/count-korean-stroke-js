@@ -22,6 +22,15 @@ describe("strict", () => {
     expect(countKoreanStroke("쥬니니")).toBe(9);
     expect(countKoreanStroke("지상 최강의 개발자 쥬니니")).toBe(47);
   });
+
+  test("한글 자음 모음 받침", () => {
+    expect(countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ")).toBe(34);
+    expect(countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ")).toBe(57);
+    expect(countKoreanStroke("ㄲㄸㅃㅆㅉ")).toBe(22);
+    expect(
+      countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ")
+    ).toBe(62);
+  });
 });
 
 describe("non-strict", () => {
@@ -43,5 +52,14 @@ describe("non-strict", () => {
     expect(countKoreanStroke("개발자", false)).toBe(21);
     expect(countKoreanStroke("쥬니니", false)).toBe(12);
     expect(countKoreanStroke("지상 최강의 개발자 쥬니니", false)).toBe(57);
+  });
+
+  test("한글 자음 모음 받침", () => {
+    expect(countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ", false)).toBe(44);
+    expect(countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ", false)).toBe(78);
+    expect(countKoreanStroke("ㄲㄸㅃㅆㅉ", false)).toBe(28);
+    expect(
+      countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ", false)
+    ).toBe(62);
   });
 });

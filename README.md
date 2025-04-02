@@ -32,6 +32,11 @@ import { countKoreanStroke } from 'count-korean-stroke';
 countKoreanStroke('죠나단 죠스타') // 26
 countKoreanStroke('디오 브란도') // 21
 countKoreanStroke('지상 최강의 개발자 쥬니니') // 47
+
+countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ") // 34
+countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ") // 57
+countKoreanStroke("ㄲㄸㅃㅆㅉ") // 22
+countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ") // 62
 ```
 
 ### Non-Strict mode
@@ -45,4 +50,9 @@ import { countKoreanStroke } from 'count-korean-stroke';
 countKoreanStroke('죠나단 죠스타', false) // 32
 countKoreanStroke('디오 브란도', false) // 26
 countKoreanStroke('지상 최강의 개발자 쥬니니', false) // 57
+
+countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ") // 44
+countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ") // 78
+countKoreanStroke("ㄲㄸㅃㅆㅉ") // 28
+countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ") // 62
 ```
