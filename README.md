@@ -51,8 +51,8 @@ countKoreanStroke('죠나단 죠스타', false) // 32
 countKoreanStroke('디오 브란도', false) // 26
 countKoreanStroke('지상 최강의 개발자 쥬니니', false) // 57
 
-countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ") // 44
-countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ") // 78
-countKoreanStroke("ㄲㄸㅃㅆㅉ") // 28
-countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ") // 62
+countKoreanStroke("ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ", false) // 44
+countKoreanStroke("ㄳㄵㄶㄺㄻㄼㄽㄾㄿㅀㅄ", false) // 78
+countKoreanStroke("ㄲㄸㅃㅆㅉ", false) // 28
+countKoreanStroke("ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ", false) // 62
 ```
