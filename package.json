@@ -1,6 +1,6 @@
 {
   "name": "count-korean-stroke",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": {
     "name": "juunini",
     "email": "juuni.ni.i@gmail.com"
@@ -15,9 +15,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/juunini/count-korean-stroke.git"
+    "url": "https://github.com/juunini/count-korean-stroke-js.git"
   },
-  "homepage": "https://github.com/juunini/count-korean-stroke",
+  "homepage": "https://github.com/juunini/count-korean-stroke-js",
   "source": "index.ts",
   "main": "index.js",
   "module": "index.mjs",
